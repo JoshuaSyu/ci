@@ -1,0 +1,17 @@
+.DS_Store
+
+application/cache/*
+!application/cache/index.html
+!application/cache/.htaccess
+
+application/logs/*
+!application/logs/index.html
+!application/logs/.htaccess
+
+application/views/cache/*
+!application/views/cache/index.html
+!application/views/cache/.htaccess
+
+application/views/templates_c/*
+!application/views/templates_c/index.html
+!application/views/templates_c/.htaccess
