@@ -44,6 +44,9 @@ $route['default_controller'] = 'pages/view';
 $route['news'] = 'news';
 $route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';
+$route['eat'] = 'eat';
+$route['eat/create'] = 'eat/create';
+$route['eat/(:any)'] = 'eat/view/$1';
 $route['(:any)'] = 'pages/view/$1';
 
 /* End of file routes.php */
