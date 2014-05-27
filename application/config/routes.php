@@ -46,6 +46,8 @@ $route['news/create'] = 'news/create';
 $route['news/(:any)'] = 'news/view/$1';
 $route['eat'] = 'eat';
 $route['eat/create'] = 'eat/create';
+$route['eat/edit'] = 'eat/create';
+$route['eat/edit/(:any)'] = 'eat/create/$1';
 $route['eat/(:any)'] = 'eat/view/$1';
 $route['(:any)'] = 'pages/view/$1';
 

@@ -1,17 +1,17 @@
 {include file='header.tpl'}
 
 {if $eat}
-	<ul class="list-group eat-list">
+	<div class="list-group eat-list">
 		{foreach $eat as $data}
-			<li class="list-group-item">{$data.eat_name}</li>
+			<a href="{$u_eat_edit}/{$data.eat_id}" class="list-group-item eat-item">{$data.eat_name}</a>
 		{/foreach}
-	</ul>
+	</div>
 
 	<button type="button" class="btn btn-primary btn-lg" id="lunchEatWhat">今天中午吃什麼？</button>
 
 	<script>
 		function lunchEatWhat() {
-			var $el = $('.eat-list li');
+			var $el = $('.eat-list .eat-item');
 			var eatLength = $el.length;
 			var atLeast = 25;
 			var startSlow = 10;
@@ -42,8 +42,8 @@
 
 						setTimeout(function () {
 							$el.eq(flag).addClass('active');
-						}, 500);
-					}, 1000);
+						}, 250);
+					}, 500);
 				}
 			}
 
