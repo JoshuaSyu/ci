@@ -22,6 +22,10 @@ class eat_model extends CI_Model {
 	public function set_eat($id = false) {
 		$data = array(
 			'eat_name' => $this->input->post('name'),
+			'eat_phone' => $this->input->post('phone'),
+			'eat_address' => $this->input->post('address'),
+			'eat_proportion' => $this->input->post('proportion'),
+			'eat_note' => $this->input->post('note'),
 		);
 
 		if ($id) {

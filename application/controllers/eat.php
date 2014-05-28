@@ -36,7 +36,8 @@ class Eat extends CI_Controller {
 		$this->load->helper('form');
 		$this->load->library('form_validation');
 
-		$this->form_validation->set_rules('name', '店家名稱', 'required');
+		$this->form_validation->set_rules('name', '店名', 'required');
+		$this->form_validation->set_rules('proportion', '權重', 'required');
 
 		if ($id) {
 			$smarty->assign(array(

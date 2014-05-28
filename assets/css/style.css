@@ -6,3 +6,7 @@
 .panel > .panel-body > .form-group:last-child {
 	margin-bottom: 0;
 }
+
+.eat-form .row:not(:last-child) {
+	margin-bottom: 10px;
+}
