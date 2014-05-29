@@ -33,9 +33,9 @@
 			</div>
 		</div>
 		<div class="row">
-			<label for="proportion" class="col-sm-1 control-label">權重</label>
+			<label for="weight" class="col-sm-1 control-label">權重</label>
 			<div class="col-sm-11">
-				<input type="text" class="form-control" id="proportion" name="proportion" value="{$eat.eat_proportion|default:''}" placeholder="數字越大越容易選到">
+				<input type="text" class="form-control" id="weight" name="weight" value="{$eat.eat_weight|default:''}" placeholder="數字越大越容易選到">
 			</div>
 		</div>
 		<div class="row">
