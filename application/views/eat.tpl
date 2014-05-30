@@ -90,11 +90,19 @@
 
 				_self.timeoutFunction.call(this);
 			},
-			stopRandom: function () {
+			stopRandom: function (showFlag) {
 				var _self = lunchEatWhat;
+
+				showFlag = !!showFlag;
 
 				clearTimeout(_self.scrolling);
 				clearInterval(_self.blinking);
+
+				_self.$el.removeClass('active');
+
+				if (showFlag) {
+					_self.$el.eq(_self.flag).addClass('active');
+				}
 			},
 			init: function () {
 				var _self = lunchEatWhat;
