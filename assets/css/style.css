@@ -10,3 +10,19 @@
 .eat-form .row:not(:last-child) {
 	margin-bottom: 10px;
 }
+
+/*.eat-edit .index {
+	width: 50px;
+}
+
+.eat-edit .name {
+	width: 300px;
+}
+
+.eat-edit .phone {
+	width: 200px;
+}
+
+.eat-edit .weight {
+	width: 100px;
+}*/

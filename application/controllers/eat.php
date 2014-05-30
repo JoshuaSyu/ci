@@ -65,4 +65,14 @@ class Eat extends CI_Controller {
 			redirect($this->u_class);
 		}
 	}
+
+	public function edit() {
+		$smarty =& $this->smarty;
+
+		$smarty->assign(array(
+			'eat'			=> $this->eat_model->get_eat(),
+		));
+
+		$smarty->display('eat_edit.tpl');
+	}
 }
